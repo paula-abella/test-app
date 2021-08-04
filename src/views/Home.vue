@@ -174,6 +174,14 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Home",
+
+  data() {
+    return {
+      selected: true,
+      selected1: true,
+      selected2: false,
+    };
+  },
 });
 </script>
 
