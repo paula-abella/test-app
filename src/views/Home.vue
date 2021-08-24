@@ -163,13 +163,44 @@
     </nav>
 
     <article>
-      <div class="layout__content"></div>
+      <div class="layout__content">
+        <sm-section>
+          <sm-container>
+            <sm-radio-group label="Favourite genre">
+              <sm-radio-button
+                name="genre"
+                label="Classical"
+                selected-value="classical"
+                v-model="genre"
+              ></sm-radio-button>
+              <sm-radio-button
+                name="genre"
+                label="Pop"
+                selected-value="pop"
+                v-model="genre"
+              ></sm-radio-button>
+              <sm-radio-button
+                name="genre"
+                label="Chill Step"
+                selected-value="chill-step"
+                v-model="genre"
+              ></sm-radio-button>
+              <sm-radio-button
+                name="genre"
+                label="Rock"
+                selected-value="rock"
+                v-model="genre"
+              ></sm-radio-button>
+            </sm-radio-group>
+          </sm-container>
+        </sm-section>
+      </div>
     </article>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from "vue"
 // import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 export default Vue.extend({
@@ -180,7 +211,8 @@ export default Vue.extend({
       selected: true,
       selected1: true,
       selected2: false,
-    };
+      genre: null,
+    }
   },
 });
 </script>
