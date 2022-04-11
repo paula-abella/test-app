@@ -108,6 +108,11 @@ module.exports = {
         'Arial',
         'sans-serif',
       ],
+      sui: [
+        'Noto Sans',
+        'Helvetica',
+        'sans-serif',
+      ],
     },
     boxShadow: {
       default: '0px 5px 11px -5px rgba(24, 58, 108, 0.15), 0px 6px 9px -5px rgba(24, 58, 108, 0.14), 0px 1px 1px -1px rgba(24, 58, 108, 0.14)',

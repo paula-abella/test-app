@@ -1,0 +1,507 @@
+:root {
+  /**
+   * First tier: brand definitions
+   * 1) These variables define the brand. We're looking for
+   *    generic declarations like "brand-blue", "brand-purple", and
+   *    so on. They should not imply usage.
+   */
+}
+
+:root {
+  /**
+   * Second tier: high-level application variables
+   * 1) At this tier you can define global values, such as "primary
+   *    color, secondary color, primary text color, action color,
+   *    default spacing values, and so on. These values help map the
+   *    brand variable definitions to actual utility. That said, these
+   *    values should not include component-specific values like
+   *    button-color-background. Those will be handled at the individual
+   *    component level.
+   */
+  /* color */
+
+  --color-pure-white: #fff;
+  --color-black: #333;
+  --color-focus: #333;
+
+  --color-primary-light: #333333;
+  --color-primary: #006add;
+  --color-primary-mid: #0057b5;
+  --color-primary-dark: #0c4583;
+
+  --color-secondary-light: #bb2bff;
+  --color-secondary: #9a1cd6;
+  --color-secondary-mid: #8313b9;
+  --color-secondary-dark: #660993;
+
+  --color-success-light: #e2f4eb;
+  --color-success: #1b7b3e;
+  --color-success-mid: #9ae0bd;
+  --color-success-dark: #0e5431;
+  --color-success-black: #0A3B22;
+
+  --color-warning-light: #fceeee;
+  --color-warning: #d11d1d;
+  --color-warning-mid: #f1bfbf;
+  --color-warning-dark: #b81919;
+  --color-warning-black: #9E1616;
+
+  --color-alert-light: #fff6c0;
+  --color-alert: #ffab00;
+  --color-alert-mid: #ffdb59;
+  --color-alert-dark: #dc9400;
+  --color-alert-black: #B27700;
+
+  --color-info-light: #e6f0ff;
+  --color-info: #006add;
+  --color-info-mid: #b0d2f8;
+  --color-info-dark: #0c4583;
+
+  --color-disabled-light: #F6F6F6;
+  --color-disabled: #9a9a9a;
+  --color-disabled-mid: #c1c1c1;
+  --color-disabled-dark: #717171;
+
+  --color-app-light: #f5f9ff;
+  --color-app: #c6ceda;
+  --color-app-mid: #e6ebf2;
+  --color-app-dark: #828ea3;
+  --color-app-xdark: #738198;
+  --color-app-black: #627189;
+
+  --color-extra-1: #E5E8E8;
+  --color-extra-2: #F2F3F3;
+  --color-extra-3: #F4F4F4;
+  --color-extra-4: #F5F7FA;
+  --color-extra-5: #FFCCB7;
+
+  /* Typography
+-------------------------- */
+  --font-family: "Noto Sans";
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+  --font-weight-x-bold: 900;
+
+  --body-color: #333;
+  --body-line-height: 22px;
+  --body-letter-spacing: -0.2px;
+  --body-font-weight: 400;
+  --body-font-size: 15px;
+
+  --h1-font-size: 36px;
+  --h1-line-height: 42px;
+  --h1-letter-spacing: -0.4px;
+  --h1-font-weight: 400;
+
+  --h2-font-size: 30px;
+  --h2-line-height: 36px;
+  --h2-letter-spacing: -0.2px;
+  --h2-font-weight: 600;
+
+  --h3-font-size: 24px;
+  --h3-line-height: 30px;
+  --h3-letter-spacing: -0.2px;
+  --h3-font-weight: 600;
+
+  --h4-font-size: 20px;
+  --h4-line-height: 26px;
+  --h4-letter-spacing: -0.2px;
+  --h4-font-weight: 600;
+
+  --h5-font-size: 18px;
+  --h5-line-height: 24px;
+  --h5-letter-spacing: -0.4px;
+  --h5-font-weight: 600;
+
+  --h6-font-size: 16px;
+  --h6-line-height: 22px;
+  --h6-letter-spacing: -0.4px;
+  --h6-font-weight: 600;
+
+  --section-header-sm-font-size: 12px;
+  --section-header-sm-line-height: 20px;
+  --section-header-sm-letter-spacing: 0.2px;
+  --section-header-sm-font-weight: 600;
+  --section-header-sm-text-transform: uppercase;
+
+  --section-header-lg-font-size: 16px;
+  --section-header-lg-line-height: 20px;
+  --section-header-lg-letter-spacing: 0.2px;
+  --section-header-lg-font-weight: 600;
+  --section-header-lg-text-transform: uppercase;
+
+  --p-lg-font-size: 15px;
+  --p-lg-line-height: 22px;
+  --p-lg-letter-spacing: -0.2px;
+
+  --p-sm-font-size: 13px;
+  --p-sm-line-height: 22px;
+  --p-sm-letter-spacing: -0.1px;
+
+  --p-xs-font-size: 12px;
+  --p-xs-line-height: 18px;
+  --p-xs-letter-spacing: 0;
+
+  --a-lg-font-size: 15px;
+  --a-lg-line-height: 22px;
+  --a-lg-letter-spacing: -0.2px;
+
+  --a-sm-font-size: 13px;
+  --a-sm-line-height: 22px;
+  --a-sm-letter-spacing: -0.1px;
+
+  --a-xs-font-size: 12px;
+  --a-xs-line-height: 18px;
+  --a-xs-letter-spacing: 0;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 15px;
+
+  /* Spacing
+-------------------------- */
+
+  --spacing-baseline: 8px;
+
+  --spacing-2xs: var(--spacing-baseline);
+  --spacing-xs: calc(var(--spacing-baseline) * 1.5);
+  --spacing-sm: calc(var(--spacing-baseline) * 2);
+  --spacing-md: calc(var(--spacing-baseline) * 2.5);
+  --spacing-lg: calc(var(--spacing-baseline) * 3);
+  --spacing-xl: calc(var(--spacing-baseline) * 3.5);
+  --spacing-2xl: calc(var(--spacing-baseline) * 4);
+
+  /* Globals
+-------------------------- */
+
+  --border-width-base: 1px;
+  --border-style-base: solid;
+
+  --border-color-base: var(--color-app-mid);
+
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --border-radius-xlg: 50%;
+
+  --box-shadow-1: 0px 3px 9px -2px rgba(24, 58, 108, 0.1), 0px 3px 4px -2px rgba(24, 58, 108, 0.1), 0px 1px 1px -1px rgba(24, 58, 108, 0.14);
+  --box-shadow-2: 0px 5px 11px -5px rgba(24, 58, 108, 0.15), 0px 6px 9px -5px rgba(24, 58, 108, 0.14), 0px 1px 1px -1px rgba(24, 58, 108, 0.14);
+  --box-shadow-3: 0px 10px 24px -9px rgba(24, 58, 108, 0.118881), 0px 12px 11px -13px rgba(24, 58, 108, 0.178322), 0px 3px 17px -8px rgba(24, 58, 108, 0.190751);
+  --box-shadow-4: 0px 15px 38px -11px rgba(24, 58, 108, 0.15), 0px 22px 7px -21px rgba(24, 58, 108, 0.14), 0px 3px 17px -8px rgba(24, 58, 108, 0.433703);
+
+  /* Break-point
+--------------------------*/
+  --xxs: 320px;
+  --xs: 640px;
+  --sm: 768px;
+  --md: 1024px;
+  --lg: 1366px;
+  --xl: 1367px; /* To Infinity */
+}
+/*
+  The var() function can be used in place of any part of a value in any property on an element. The var() function can not be used as property names, selectors, or anything else besides property values. (Doing so usually produces invalid syntax, or else a value whose meaning has no connection to the variable.)
+  In use SUI Breakpoints:
+  --xxs:320px;
+  --xs: 640px;
+  --sm: 768px;
+  --md: 1024px;
+  --lg: 1366px;
+  --xl: 1367px; // To Infinity
+*/
+@media (max-width: 640px) {
+  :root {
+    --h1-font-size: 28px;
+    --h1-line-height: 34px;
+    --h1-letter-spacing: -0.2px;
+    --h1-font-weight: 600;
+
+    --h2-font-size: 22px;
+    --h2-line-height: 28px;
+    --h2-letter-spacing: -0.2px;
+    --h2-font-weight: 600;
+
+    --h3-font-size: 18px;
+    --h3-line-height: 24px;
+    --h3-letter-spacing: normal;
+    --h3-font-weight: 600;
+  }
+}
+
+/** ---------------------------------------------------------------------------
+* components styles: component-specific variables
+* 1) Here we map the theme's second-tier global variables to the
+*    specific components.
+* 2) Worth noting in a production environment the :root variables
+*    would be updated rather than a theme-specific body class.
+*/
+.sm-button {
+  /* Common */
+  --sm-c-button-padding-y: 9px;
+  --sm-c-button-padding-x: 23px;
+  --sm-c-button-padding-text-left: 8px;
+  --sm-c-button-padding-text-right: 8px;
+  --sm-c-button-border-radius: var(--border-radius-sm);
+
+  /* Default:large */
+  --sm-c-button-font-size-large: var(--p-lg-font-size);
+  --sm-c-button-line-height-large: 18px;
+  --sm-c-button-letter-spacing-large: var(--p-lg-letter-spacing);
+  --sm-c-button-font-weight-large: var(--font-weight-regular);
+
+  --sm-c-button-border-width-large: 2px;
+
+  /* medium */
+  --sm-c-button-font-size-medium: var(--p-sm-font-size);
+  --sm-c-button-letter-spacing-medium: var(--p-sm-letter-spacing);
+
+  /* small */
+  --sm-c-button-font-size-small: var(--p-xs-font-size);
+  --sm-c-button-letter-spacing-small: 0.2px;
+
+  /* mini */
+  --sm-c-button-font-size-mini: 10px;
+
+  /* shape : round */
+  --sm-c-button-font-size-round: var(--font-size-base);
+  --sm-c-button-border-radius-round: var(--border-radius-xlg);
+
+  /* shape : square */
+  --sm-c-button-font-size-square: var(--font-size-base);
+  --sm-c-button-border-radius-square: var(--border-radius-sm);
+
+  /* disabled */
+  --sm-c-button-color-border-disabled: var(--color-disabled-mid);
+  --sm-c-button-color-text-disabled: var(--color-disabled);
+  --sm-c-button-color-background-disabled: var(--color-disabled-light);
+  --sm-c-button-border-width-disabled: 1px;
+
+  /* type */
+  /* default */
+  --sm-c-button-color-border-default: transparent;
+  --sm-c-button-color-text-default: var(--color-black);
+  --sm-c-button-color-background-default: var(--color-pure-white);
+
+  --sm-c-button-color-border-default-hover: transparent;
+  --sm-c-button-color-text-default-hover: var(--color-black);
+  --sm-c-button-color-background-default-hover: var(--color-app-mid);
+
+  --sm-c-button-color-border-default-focus: var(--color-focus);
+  --sm-c-button-color-text-default-focus: var(--color-black);
+  --sm-c-button-color-background-default-focus: var(--color-app-mid);
+
+  --sm-c-button-color-border-default-clicked: transparent;
+  --sm-c-button-color-text-default-clicked: var(--color-black);
+  --sm-c-button-color-background-default-clicked: var(--color-app);
+
+  /* primary */
+  --sm-c-button-color-border-primary: transparent;
+  --sm-c-button-color-text-primary: var(--color-pure-white);
+  --sm-c-button-color-background-primary: var(--color-primary);
+
+  --sm-c-button-color-border-primary-hover: transparent;
+  --sm-c-button-color-text-primary-hover: var(--color-pure-white);
+  --sm-c-button-color-background-primary-hover: var(--color-primary-mid);
+
+  --sm-c-button-color-border-primary-focus: var(--color-focus);
+  --sm-c-button-color-text-primary-focus: var(--color-pure-white);
+  --sm-c-button-color-background-primary-focus: var(--color-primary);
+
+  --sm-c-button-color-border-primary-clicked: transparent;
+  --sm-c-button-color-text-primary-clicked: var(--color-pure-white);
+  --sm-c-button-color-background-primary-clicked: var(--color-primary-dark);
+
+  /* secondary */
+  --sm-c-button-color-border-secondary: var(--color-primary);
+  --sm-c-button-color-text-secondary: var(--color-primary);
+  --sm-c-button-color-background-secondary: var(--color-pure-white);
+
+  --sm-c-button-color-border-secondary-hover: var(--color-primary-mid);
+  --sm-c-button-color-text-secondary-hover: var(--color-primary-mid);
+  --sm-c-button-color-background-secondary-hover: var(--color-app-mid);
+
+  --sm-c-button-color-border-secondary-focus: var(--color-focus);
+  --sm-c-button-color-text-secondary-focus: var(--color-primary);
+  --sm-c-button-color-background-secondary-focus: var(--color-app-mid);
+
+  --sm-c-button-color-border-secondary-clicked: var(--color-primary-dark);
+  --sm-c-button-color-text-secondary-clicked: var(--color-primary-dark);
+  --sm-c-button-color-background-secondary-clicked: var(--color-app);
+
+  /* tertiary */
+  --sm-c-button-color-border-tertiary: var(--color-app);
+  --sm-c-button-color-text-tertiary: var(--color-black);
+  --sm-c-button-color-background-tertiary: var(--color-pure-white);
+
+  --sm-c-button-color-border-tertiary-hover: var(--color-app);
+  --sm-c-button-color-text-tertiary-hover: var(--color-black);
+  --sm-c-button-color-background-tertiary-hover: var(--color-app-mid);
+
+  --sm-c-button-color-border-tertiary-focus: var(--color-focus);
+  --sm-c-button-color-text-tertiary-focus: var(--color-black);
+  --sm-c-button-color-background-tertiary-focus: var(--color-app-mid);
+
+  --sm-c-button-color-border-tertiary-clicked: transparent;
+  --sm-c-button-color-text-tertiary-clicked: var(--color-black);
+  --sm-c-button-color-background-tertiary-clicked: var(--color-app);
+
+  --sm-c-button-box-shadow-tertiary: 0 1px 1px 0 rgba(0, 57, 85, 0.19);
+  --sm-c-button-border-width-tertiary: 1px;
+
+  --sm-c-button-color-icon-tertiary-square: var(--color-primary);
+  --sm-c-button-color-icon-tertiary-round: var(--color-primary);
+
+  /* info */
+  --sm-c-button-color-border-info: transparent;
+  --sm-c-button-color-text-info: var(--color-pure-white);
+  --sm-c-button-color-background-info: var(--color-app-dark);
+
+  --sm-c-button-color-border-info-hover: transparent;
+  --sm-c-button-color-text-info-hover: var(--color-pure-white);
+  --sm-c-button-color-background-info-hover: var(--color-app-xdark);
+
+  --sm-c-button-color-border-info-focus: var(--color-focus);
+  --sm-c-button-color-text-info-focus: var(--color-pure-white);
+  --sm-c-button-color-background-info-focus: var(--color-app-dark);
+
+  --sm-c-button-color-border-info-clicked: transparent;
+  --sm-c-button-color-text-info-clicked: var(--color-pure-white);
+  --sm-c-button-color-background-info-clicked: var(--color-app-black);
+
+  /* success */
+  --sm-c-button-color-border-success: transparent;
+  --sm-c-button-color-text-success: var(--color-pure-white);
+  --sm-c-button-color-background-success: var(--color-success);
+
+  --sm-c-button-color-border-success-hover: transparent;
+  --sm-c-button-color-text-success-hover: var(--color-pure-white);
+  --sm-c-button-color-background-success-hover: var(--color-success-dark);
+
+  --sm-c-button-color-border-success-focus: var(--color-focus);
+  --sm-c-button-color-text-success-focus: var(--color-pure-white);
+  --sm-c-button-color-background-success-focus: var(--color-success);
+
+  --sm-c-button-color-border-success-clicked: var(--color-focus);
+  --sm-c-button-color-text-success-clicked: var(--color-pure-white);
+  --sm-c-button-color-background-success-clicked: var(--color-success-black);
+
+
+  /* warning */
+  --sm-c-button-color-border-warning: transparent;
+  --sm-c-button-color-text-warning: var(--color-pure-white);
+  --sm-c-button-color-background-warning: var(--color-warning);
+
+  --sm-c-button-color-border-warning-hover: transparent;
+  --sm-c-button-color-text-warning-hover: var(--color-pure-white);
+  --sm-c-button-color-background-warning-hover: var(--color-warning-dark);
+
+  --sm-c-button-color-border-warning-focus: var(--color-focus);
+  --sm-c-button-color-text-warning-focus: var(--color-pure-white);
+  --sm-c-button-color-background-warning-focus: var(--color-warning);
+
+  --sm-c-button-color-border-warning-clicked: transparent;
+  --sm-c-button-color-text-warning-clicked: var(--color-pure-white);
+  --sm-c-button-color-background-warning-clicked: var(--color-warning-black);
+}
+
+.sm-field-label {
+  /* Common */
+  --sm-c-field-label-color-text: var(--color-app-black);
+  --sm-c-field-label-color-text-required-asterisk: #dc5208;
+
+  /* Focus */
+  --sm-c-field-label-color-text-focus: var(--color-secondary);
+
+  /* Invalid */
+  --sm-c-field-label-color-text-invalid: #dc5208;
+}
+
+.sm-field-error {
+  --sm-c-field-error-color-text: #dc5208;
+}
+
+.sm-input {
+  /* Common */
+  --sm-c-input-border-radius: var(--border-radius-md);
+  --sm-c-input-color-border: var(--color-app);
+  --sm-c-input-color-text: #240046;
+  --sm-c-input-color-icon: var(--color-app-black);
+
+  /* Focus */
+  --sm-c-input-color-border-focus: var(--color-secondary);
+  --sm-c-input-color-icon-focus: var(--color-secondary);
+
+  /* Invalid */
+  --sm-c-input-color-border-invalid: #dc5208;
+  --sm-c-input-color-icon-invalid: #dc5208;
+
+  /* Disabled */
+  --sm-c-input-color-background-disabled: #fafafa;
+
+  /* Number controls */
+  --sm-c-input-number-control-color-border: var(--color-secondary);
+  --sm-c-input-number-control-color-text: var(--color-secondary);
+  --sm-c-input-number-control-width: 38px;
+  --sm-c-input-number-control-height: 38px;
+
+  /* Prefix slot */
+  --sm-c-input-prefix-slot-color-background: #edf6f9;
+  --sm-c-input-prefix-slot-color-border: #c7dfe8;
+  --sm-c-input-prefix-slot-color-text: #006d77;
+
+  /* Suffix slot */
+  --sm-c-input-suffix-slot-color-background: #edf6f9;
+  --sm-c-input-suffix-slot-color-border: #c7dfe8;
+  --sm-c-input-suffix-slot-color-text: #006d77;
+
+  /* Editable cell */
+  --sm-c-input-color-background-editable-cell-focus: #e7c0ff;
+  --sm-c-input-color-background-editable-cell-invalid: var(--color-warning-light);
+
+  /* Help text */
+  --sm-c-input-help-text-color-text: #9d4edd;
+
+  /* Counter */
+  --sm-c-input-counter-color-text: #240046;
+
+  /* Mixed inputs - Select */
+  --sm-c-input-select-color-background: #e7c0ff;
+  --sm-c-input-select-color-border: #d4a3f3;
+  --sm-c-input-select-color-text: #240046;
+
+  --sm-c-input-select-color-background-hover: #c57af3;
+  --sm-c-input-select-color-border-hover: #b556f0;
+
+  --sm-c-input-select-color-background-active: #b556f0;
+  --sm-c-input-select-color-border-active: #b556f0;
+}
+
+.sm-select {
+  --sm-c-select-border-radius: var(--border-radius-md);
+  --sm-c-select-border-width: 1px;
+  --sm-c-select-color-border: var(--color-app);
+  --sm-c-select-color-icon: var(--color-app-black);
+  --sm-c-select-color-text: #240046;
+
+  --sm-c-select-color-border-focus: var(--color-secondary);
+
+  /* Prefix slot */
+  --sm-c-select-prefix-slot-color-background: #edf6f9;
+  --sm-c-select-prefix-slot-color-border: #c7dfe8;
+  --sm-c-select-prefix-slot-color-text: #006d77;
+
+  /* Suffix slot */
+  --sm-c-select-suffix-slot-color-background: #edf6f9;
+  --sm-c-select-suffix-slot-color-border: #c7dfe8;
+  --sm-c-select-suffix-slot-color-text: #006d77;
+
+  /* Dropdown */
+  --sm-c-select-dropdown-border-radius: var(--border-radius-md);
+
+  /* Dropdown - Option group */
+  --sm-c-select-dropdown-group-title-color-text: var(--color-secondary-light);
+
+  /* Dropdown - Option */
+  --sm-c-select-dropdown-option-color-border-selected: var(--color-secondary);
+}
