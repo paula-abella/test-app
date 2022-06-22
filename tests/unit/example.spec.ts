@@ -1,12 +1,16 @@
 import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import AsideLayout from "@/components/aside-layout.vue";
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
+describe("AsideLayout", () => {
+
+  it("renders aside layout container", () => {
+    const wrapper = shallowMount(AsideLayout, {
+      stubs: ['sm-container'],
     });
-    expect(wrapper.text()).toMatch(msg);
+
+    expect(wrapper.find('.layout').exists()).toBe(true);
+    expect(wrapper.find('.layout__aside').exists()).toBe(true);
+    expect(wrapper.find('.layout__content').exists()).toBe(true);
   });
+
 });

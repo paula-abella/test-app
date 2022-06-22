@@ -4,7 +4,6 @@
     <sm-page-title v-if="title" :title="title" class="mb-12"></sm-page-title>
     <h2 v-if="subtitle" class="mb-32">
       {{ subtitle }}
-      <span v-if="id">{{ id }}</span>
     </h2>
 
     <sm-loading-dashboard v-if="mode === 1">
@@ -46,10 +45,6 @@ export default Vue.extend({
     }
   },
 
-  computed: {
-    id () {
-      return (this.$route as any).params.id
-    },
-  }
+  computed: {}
 })
 </script>

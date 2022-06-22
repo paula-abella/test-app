@@ -79,14 +79,10 @@ export default defineComponent({
 
               <sm-vertical-nav-item label="Switch property" to="/switch-property" />
 
-              <sm-vertical-nav-item label="Property settings" to="/property-settings/" />
-
-              <sm-vertical-nav-item label="User management" to="/user-management" />
-
-              <sm-vertical-nav-item label="Direct booking" to="/setup/direct-booking">
+              <sm-vertical-nav-item label="Settings">
                 <template v-slot:header-subnav>
-                  <sm-vertical-nav-item label="Extras" to="/setup/direct-booking/promotions" />
-                  <sm-vertical-nav-item label="Promotions" to="/setup/direct-booking/promotions" />
+                  <sm-vertical-nav-item label="Property settings" to="/property-settings/" />
+                  <sm-vertical-nav-item label="User management" to="/user-management" />
                 </template>
               </sm-vertical-nav-item>
             </sm-vertical-nav>
