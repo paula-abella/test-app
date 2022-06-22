@@ -1,8 +1,18 @@
 // https://docs.cypress.io/api/introduction/api.html
 
-describe("My First Test", () => {
-  it("Visits the app root url", () => {
+describe("Header", () => {
+  it("Property menu", () => {
     cy.visit("/");
-    cy.contains("h1", "Welcome to Your Vue.js + TypeScript App");
+
+    cy.contains('Park Hyatt Sydney').click();
+    cy.contains('Switch property').should('be.visible');
+    cy.contains('Settings').should('be.visible');
+    cy.contains('Property settings').should('not.be.visible');
+    cy.contains('User management').should('not.be.visible');
+
+    cy.contains('Settings').click();
+    cy.contains('Property settings').should('be.visible');
+    cy.contains('User management').should('be.visible');
+
   });
 });
