@@ -5,6 +5,7 @@ This will serve a dummy Vue application that uses SUI design system.
 ## Running locally
 
 ### Prerequisites
+- Access to SiteMinder GitHub and JFrog
 - First four points in [Cloud Computing Environment Checklist](https://siteminder.atlassian.net/wiki/spaces/eng/pages/602051554/Cloud+Computing+Environment+Checklist#CloudComputingEnvironmentChecklist-nvmandNodeJS)
 
 
