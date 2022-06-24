@@ -31,7 +31,7 @@ Then go to http://localhost:8080/
 
 You should see the following:
 
-<img width="720px" alt="test-app-demo" src="https://user-images.githubusercontent.com/84423488/174955650-633f1a29-56c1-489d-85c2-90c4e130f8ca.png">
+<img width="720px" alt="test-app-demo" src="https://user-images.githubusercontent.com/84423488/175458377-515d536c-1002-4ca3-a8ea-297d14bb62ad.png">
 
 This dummy application has the navigation and some testing pages setup.
 
