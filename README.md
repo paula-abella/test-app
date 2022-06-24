@@ -41,7 +41,7 @@ You can add content/components to it to test things locally.
 For example, open `src/views/direct-booking/direct-booking-rates.vue` then add HTML directly into the `template` tag.
 Note that in Vue, there should be one root element, for example an outer `div` with all the contents inside.
 
-```
+```html
 <template>
   <div>
     <!-- One root div element above or any other element then add the rest of the elements here -->
@@ -50,4 +50,10 @@ Note that in Vue, there should be one root element, for example an outer `div` w
 ```
 
 The CSS styles can go in the `style` tag. We use SCSS pre-processing.
+
+```html
+<style lang="scss" scoped>
+/* CSS goes here */
+</style>
+```
 
