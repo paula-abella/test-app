@@ -10,9 +10,12 @@ This will serve a dummy Vue application that uses SUI design system.
 
 
 ### Setup
+Open up a terminal then run the following:
+
 ```
 // Fork this repo or clone directly
-// git clone git@github.com:paula-abella/test-app.git
+// git clone <repository here>
+// e.g git clone git@github.com:paula-abella/test-app.git
 
 // Go to the project directory
 cd test-app
@@ -31,9 +34,10 @@ You should see the following:
 <img width="720px" alt="test-app-demo" src="https://user-images.githubusercontent.com/84423488/174955650-633f1a29-56c1-489d-85c2-90c4e130f8ca.png">
 
 This dummy application has the navigation and some testing pages setup.
-It's meant to serve a simple and static page so it's not using any of our BEEF architecture.
 
-Once you are done, you can close the app by going to the terminal and doing <kbd>Ctrl + C</kbd>.
+It's meant to serve a **simple and static page** and it's not using any of our BEEF architecture.
+
+Once you are done for the day, you can close the local server by going to the terminal and doing <kbd>Ctrl + C</kbd>.
 
 ### Updating the pages
 To update existing pages in the application, open up any of the views.
@@ -50,7 +54,7 @@ Note that in Vue, there should be one root element, for example an outer `div` w
 </template>
 ```
 
-The CSS styles can go in the `style` tag. We use SCSS pre-processing.
+The CSS styles can go in the `style` section. We use SCSS pre-processing.
 
 ```html
 <style lang="scss" scoped>
@@ -72,3 +76,6 @@ To bump the SUI libraries to get the latest version(s)
 npm i @siteminder/sui-core@latest @siteminder/sui-icons@latest @siteminder/sui-themes@latest
 ```
 
+## Additional resources
+- https://vuejs.org/
+- https://sass-lang.com/
