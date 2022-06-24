@@ -32,14 +32,9 @@ You should see the following:
 This dummy application has the navigation and some testing pages setup.
 It's meant to serve a simple and static page so it's not using any of our BEEF architecture.
 
-### Updating packages
-To bump the SUI libraries to get the latest version(s)
+Once you are done, you can close the app by going to the terminal and doing <kbd>Ctrl + C</kbd>.
 
-```
-npm i @siteminder/sui-core@latest @siteminder/sui-icons@latest @siteminder/sui-themes@latest
-```
-
-### Using the components
+### Updating the pages
 To update existing pages in the application, open up any of the views.
 
 For example, open `src/views/direct-booking/direct-booking-rates.vue` then add HTML directly into the `template` tag.
@@ -61,5 +56,12 @@ The CSS styles can go in the `style` tag. We use SCSS pre-processing.
 /* CSS goes here */
 
 </style>
+```
+
+### Updating packages
+To bump the SUI libraries to get the latest version(s)
+
+```
+npm i @siteminder/sui-core@latest @siteminder/sui-icons@latest @siteminder/sui-themes@latest
 ```
 
