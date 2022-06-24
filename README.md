@@ -58,7 +58,10 @@ The CSS styles can go in the `style` tag. We use SCSS pre-processing.
 </style>
 ```
 
-### Updating packages
+After doing the edits, just save the file and the application will automatically recompile and you should see the updates right away.
+
+
+## Updating packages
 To bump the SUI libraries to get the latest version(s)
 
 ```
