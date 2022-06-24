@@ -11,7 +11,6 @@ export default defineComponent({
 
   props: {
     fullWidth: { type: Boolean, default: false },
-    hideHorizontalNav: { type: Boolean, default: false },
   },
 })
 </script>
@@ -26,7 +25,9 @@ export default defineComponent({
         <slot name="aside" />
       </div>
 
-      <div class="layout__content">
+      <div
+        class="layout__content"
+      >
         <sm-container
           :full-width="fullWidth"
           class="mx-auto"

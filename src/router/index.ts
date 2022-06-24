@@ -63,6 +63,13 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "inventory" */ "../views/direct-booking/direct-booking-rates.vue"),
   },
 
+  // Error
+  {
+    path: '/error',
+    component: () =>
+      import(/* webpackChunkName: "empty" */ "../views/error.vue"),
+  },
+
   // Redirect
   {
     path: '*',
