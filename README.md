@@ -5,12 +5,13 @@ This will serve a dummy Vue application that uses SUI design system.
 ## Running locally
 
 ### Prerequisites
-- Create an JFrog account, setup JFrog API Key and configure npm cli. See https://siteminder.atlassian.net/wiki/spaces/~andy.shen/pages/879003226/Setting+up+npm+package+access
+- First four points in [Cloud Computing Environment Checklist](https://siteminder.atlassian.net/wiki/spaces/eng/pages/602051554/Cloud+Computing+Environment+Checklist#CloudComputingEnvironmentChecklist-nvmandNodeJS)
 
 
 ### Setup
 ```
-git clone git@github.com:paula-abella/test-app.git
+// fork this repo or clone
+// git clone git@github.com:paula-abella/test-app.git
 
 cd test-app
 
@@ -30,7 +31,23 @@ You should see the following:
 If you need to bump the SUI libraries to test the latest version(s)
 
 ```
-npm i @siteminder/sui-core@latest @siteminder/sui-header@latest @siteminder/sui-sidebar@latest @siteminder/sui-icons@latest @siteminder/sui-themes@latest
+npm i @siteminder/sui-core@latest @siteminder/sui-icons@latest @siteminder/sui-themes@latest
 ```
 
-### 
+### Using the components
+Routes and a couple of empty pages are provided in the dummy application.
+You can add content/components to it to test things locally.
+
+For example, open `src/views/direct-booking/direct-booking-rates.vue` then add HTML directly into the `template` tag.
+Note that in Vue, there should be one root element, for example an outer `div` with all the contents inside.
+
+```
+<template>
+  <div>
+    <!-- One root div element above or any other element then add the rest of the elements here -->
+  </div>
+</template>
+```
+
+The CSS styles can go in the `style` tag. We use SCSS pre-processing.
+
