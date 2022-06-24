@@ -38,6 +38,7 @@ Once you are done, you can close the app by going to the terminal and doing <kbd
 To update existing pages in the application, open up any of the views.
 
 For example, open `src/views/direct-booking/direct-booking-rates.vue` then add HTML directly into the `template` tag.
+
 Note that in Vue, there should be one root element, for example an outer `div` with all the contents inside.
 
 ```html
@@ -59,6 +60,8 @@ The CSS styles can go in the `style` tag. We use SCSS pre-processing.
 ```
 
 After doing the edits, just save the file and the application will automatically recompile and you should see the updates right away.
+
+The file mentioned above should update this page http://localhost:8080/direct-booking/direct-booking-rates.
 
 
 ## Updating packages
