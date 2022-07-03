@@ -199,7 +199,7 @@ export default defineComponent({
 
         <template v-slot:tablet-navigation>
           <sm-nav
-            content-class="sm-nav__fixed-width"
+            content-class="tablet-nav"
             logo="https://assets.siteminder.com/product/siteminder/sm-logo-app-colour.svg"
             title="Test Application"
             :visible.sync="navVisible"
@@ -245,6 +245,10 @@ export default defineComponent({
   @media (max-width: 640px) {
     display: none;
   }
+}
+
+::v-deep .tablet-nav {
+  max-width: 480px;
 }
 
 </style>

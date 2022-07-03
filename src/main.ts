@@ -20,11 +20,9 @@ import "@siteminder/sui-core/sui-core.esm.css"
 import './styles/tailwind.scss'
 import './styles/global.scss'
 
-
 import App from "./App.vue"
 import "./registerServiceWorker"
 import router from "./router"
-import store from "./store"
 
 Vue.use(VueCompositionApi)
 Vue.use(VueI18n)
@@ -42,7 +40,6 @@ Vue.use(SuiCore, { i18n })
 
 new Vue({
   router,
-  store,
   i18n,
   render: (h) => h(App),
 }).$mount("#app")
