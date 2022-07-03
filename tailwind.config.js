@@ -31,15 +31,30 @@ const colours = {
   'app-warning': '#d11d1d',
   'app-warning-mid': '#f1bfbf',
   'app-warning-light': '#fceeee',
-  'app-alert-light': '#fff9d6',
+  'app-warning-dark': '#b81919',
+  'app-warning-black': '#9e1616',
+  'app-alert-light': '#fff6c0',
   'app-alert-mid': '#fccc0b',
-  'app-alert': '#e48100',
+  'app-alert': '#ffab00',
+  'app-alert-dark': '#dc9400',
+  'app-alert-black': '#b27700',
   'app-success': '#1b7b3e',
   'app-success-light': '#e2f4eb',
   'app-success-mid': '#9ae0bd',
+  'app-success-dark': '#0e5431',
+  'app-success-black': '#0a3b22',
+  'app-info': '#006add',
   'app-info-mid': '#b0d2f8',
   'app-info-light': '#e6f0ff',
-  'tbb-canvas': '#2e989c',
+  'app-extra-4': '#f5f7fa',
+  'illu-secondary-light': '#E6EBF2',
+  'illu-secondary-mid': '#C6CEDA',
+  'illu-secondary': '#828EA3',
+  'illu-primary-light': '#F5F9FF',
+  'illu-primary-mid': '#B0D2F8',
+  'illu-primary': '#006ADD',
+  'brand-1': '#00033B',
+  'brand-2': '#006DFF',
 }
 
 module.exports = {
@@ -48,7 +63,7 @@ module.exports = {
   theme: {
     screens: {
       // Mobile first breakpoints. i.e. mobile's min width is 0
-      tablet: '641px', // => @media (min-width: 451px) { ... }
+      tablet: '641px', // => @media (min-width: 641px) { ... }
       'small-desktop': '769px', // => @media (min-width: 769px) { ... }
       'large-desktop': '1025px', // => @media (min-width: 1025px) { ... }
       'extra-large-desktop': '1367px', // => @media (min-width: 1367px) { ... }
@@ -86,6 +101,25 @@ module.exports = {
       '768': '768px',
       '896': '896px',
       '1024': '1024px',
+    },
+    extend: {
+      // SUI spacing variables
+      spacing: {
+        'sm-4': '4px',
+        'sm-8': '8px',
+        'sm-12': '12px',
+        'sm-16': '16px',
+        'sm-20': '20px',
+        'sm-24': '24px',
+        'sm-32': '32px',
+        'sm-40': '40px',
+        'sm-48': '48px',
+        'sm-56': '56px',
+        'sm-64': '64px',
+        'sm-72': '72px',
+        'sm-80': '80px',
+        'sm-96': '96px'
+      }
     },
     borderRadius: {
       none: '0',

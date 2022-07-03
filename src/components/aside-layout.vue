@@ -10,7 +10,15 @@ export default defineComponent({
   },
 
   props: {
-    fullWidth: { type: Boolean, default: false },
+    fullWidth: {
+      type: Boolean,
+      default: false,
+    },
+    theme: {
+      type: String,
+      default: 'light',
+      validator: (value: string) => ['light', 'dark'].includes(value),
+    },
   },
 })
 </script>
@@ -27,6 +35,7 @@ export default defineComponent({
 
       <div
         class="layout__content"
+        :class="{ 'layout__content--dark': theme === 'dark' }"
       >
         <sm-container
           :full-width="fullWidth"
@@ -55,12 +64,15 @@ export default defineComponent({
   }
 
   &__content {
-    background: #f5f9ff;
-    min-height: calc(100vh - 57px);
+    // min-height: calc(100vh - 57px);
     padding-top: 48px;
     position: relative;
     flex-grow: 1;
     overflow: hidden;
+
+    &--dark {
+      background-color: #f5f9ff;
+    }
   }
 
   @media (min-width: 1025px) {

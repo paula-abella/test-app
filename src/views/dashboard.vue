@@ -14,7 +14,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <aside-layout :full-width="true">
+  <aside-layout theme="dark" :full-width="true">
     <sm-loading-dashboard>
       <sm-loading-long-card />
 

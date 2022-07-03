@@ -2,11 +2,13 @@ import Vue from "vue"
 import VueI18n from "vue-i18n"
 import VueCompositionApi from "@vue/composition-api"
 import SuiCore from "@siteminder/sui-core"
-// import SuiHeader from "@siteminder/sui-header"
 import SuiIcons from "@siteminder/sui-icons"
+
+// --- V2
+// import SuiHeader from "@siteminder/sui-header"
 // import SuiSidebar from "@siteminder/sui-sidebar"
 
-// Theme
+// --- Theming
 // import "@siteminder/sui-themes/sui-theme.esm.css"
 // import "./styles/theming-test.css";
 

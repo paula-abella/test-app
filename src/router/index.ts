@@ -67,7 +67,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/error',
     component: () =>
-      import(/* webpackChunkName: "empty" */ "../views/error.vue"),
+      import(/* webpackChunkName: "empty" */ "../views/error/error.vue"),
   },
 
   // Redirect
